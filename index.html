@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="btap1" value="Bai Tap 1" onclick="btap1();"/><br/>
+<input type="button" id="btap2" value="Bai Tap 2" onclick="btap2();"/><br/>
+<script>
+    function btap1() {
+        let num = 0;
+        let total = 0;
+        let number = 0;
+
+        while( number != -1 ) {
+            num = prompt('Nhap du lieu : ');
+            number = parseInt(num);
+            total += number;
+        }
+
+        alert(total);
+    }
+    function btap2() {
+        let i = 1;
+
+        while (i < 100) {
+            //phân thân vòng lặp
+            document.write("<hr width = " + i + "%>");
+            i++;
+        }
+    }
+</script>
+</body>
+</html>
